@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Etsy Opportunity Radar is a private marketplace research project for Etsy sellers.">
+<title>Etsy Opportunity Radar | Marketplace Research</title>
+<style>
+:root {
+  --navy: #172235;
+  --gold: #b99a68;
+  --muted: #687386;
+  --bg: #f7f8fa;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--navy);
+  background: white;
+  line-height: 1.7;
+}
+header {
+  padding: 22px 8%;
+  border-bottom: 1px solid #e9ebef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo { font-size: 19px; font-weight: 700; }
+.logo span { color: var(--gold); }
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+}
+.hero {
+  background: var(--navy);
+  color: white;
+  padding: 100px 8%;
+  text-align: center;
+}
+.eyebrow {
+  color: #d7bd91;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+h1 {
+  font-size: clamp(34px, 5vw, 58px);
+  line-height: 1.15;
+  max-width: 850px;
+  margin: 22px auto;
+}
+.hero p {
+  max-width: 680px;
+  margin: 20px auto;
+  color: #d5dce7;
+  font-size: 17px;
+}
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 13px 25px;
+  background: var(--gold);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+section {
+  padding: 75px 8%;
+  max-width: 1200px;
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.section-title h2 { font-size: 30px; }
+.section-title p {
+  color: var(--muted);
+  max-width: 650px;
+  margin: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+.card {
+  padding: 28px;
+  border: 1px solid #e8eaf0;
+  border-radius: 8px;
+  background: white;
+}
+.card .number {
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+.card h3 { font-size: 19px; }
+.card p { color: var(--muted); font-size: 14px; }
+.about {
+  background: var(--bg);
+  max-width: none;
+}
+.about-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+.about p { color: var(--muted); }
+footer {
+  background: var(--navy);
+  color: #cbd2df;
+  text-align: center;
+  padding: 35px 8%;
+  font-size: 12px;
+}
+footer p { margin: 7px; }
+@media(max-width:600px) {
+  header { padding: 18px 5%; }
+  nav a { margin-left: 10px; font-size: 12px; }
+  .hero { padding: 75px 6%; }
+  section { padding: 55px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Etsy <span>Opportunity</span> Radar</div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero">
+  <div class="eyebrow">Marketplace Research & Analytics</div>
+  <h1>Discover Opportunities.<br>Understand the Market.</h1>
+  <p>
+    A private research project designed to help Etsy sellers
+    explore marketplace listings, understand product trends,
+    compare pricing, and make more informed business decisions.
+  </p>
+  <a class="button" href="#research">Explore the Project</a>
+</div>
+
+<section id="research">
+  <div class="section-title">
+    <h2>Research Capabilities</h2>
+    <p>
+      An integrated approach to marketplace research,
+      product discovery, and shop performance analysis.
+    </p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="number">01 / DISCOVERY</div>
+      <h3>Product Discovery</h3>
+      <p>Explore publicly accessible marketplace listings across product categories.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">02 / ANALYTICS</div>
+      <h3>Shop Research</h3>
+      <p>Study publicly available shop information and marketplace activity.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">03 / PRICING</div>
+      <h3>Price Intelligence</h3>
+      <p>Compare listing prices, discounts, and observed pricing changes.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">04 / TRENDS</div>
+      <h3>Market Trends</h3>
+      <p>Organize research observations to identify emerging product opportunities.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">05 / HISTORY</div>
+      <h3>Historical Research</h3>
+      <p>Build historical records from permitted data sources for trend analysis.</p>
+    </div>
+
+    <div class="card">
+      <div class="number">06 / PERFORMANCE</div>
+      <h3>Shop Performance</h3>
+      <p>Analyze the owner's own shop data through authorized OAuth access.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-inner">
+    <div class="section-title">
+      <h2>About This Project</h2>
+    </div>
+    <p>
+      Etsy Opportunity Radar is an independently developed,
+      private research and analytics project created for
+      personal Etsy seller operations.
+    </p>
+    <p>
+      The project is intended to organize publicly accessible
+      marketplace information and analyze the owner's own
+      shop data through authorized Etsy API access.
+    </p>
+    <p>
+      The application is currently under development and is
+      not offered as a commercial service to third-party sellers.
+    </p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p><strong>Etsy Opportunity Radar</strong></p>
+  <p>Independent marketplace research project.</p>
+  <p>
+    Etsy is a trademark of Etsy, Inc.
+    This project is not affiliated with or endorsed by Etsy, Inc.
+  </p>
+  <p>© 2026 Etsy Opportunity Radar</p>
+</footer>
+
+</body>
+</html>
